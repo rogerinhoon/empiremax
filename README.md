@@ -1,5 +1,3 @@
-# empiremax-html
-Empiremax
 <div align="center">
     <h1>Empiremax</h1>
     <img align="center" alt="Bootstrap" height="45" width="50" src="https://github.com/devicons/devicon/blob/master/icons/bootstrap/bootstrap-original.svg">
