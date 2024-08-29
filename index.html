@@ -33,10 +33,94 @@
 
     <!-- Favicon -->
     <link rel="icon" href="https://www.empiremax.com/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="dist/css/app.css">
+
+    <script src="dist/js/jquery-3.7.1.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <header class="header-site">
+        <div class="container">
+            <div class="row align-items-center gx-lg-5">
+                <div class="col-auto">
+                    <a href="/" class="logo-custom" title="EmpireMax">
+                        EmpireMax
+                    </a>
+                </div>
+                <div class="col-lg-5">
+                    <form action="" class="form-seach-header">
+                        <input type="text" placeholder="Produto...">
+                        <button>
+                            <img src="dist/imgs/icon-search.png" alt="icone">
+                        </button>
+                    </form>
+                </div>
+                <div class="col-auto">
+                    <div class="d-inline-block">
+                        <a href="blog.html" title="Blog" class="link-header me-3">Blog</a>
+                        <a href="categorias.html" title="Categorias" class="link-header ms-3">Categorias</a>
+                    </div>
+                    <button id="toggle-theme">Toggle Theme</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <div class="container">
+        Conteúdo
+    </div>
+
+    <script>
+        // Funções para manipular cookies
+        function setCookie(name, value, days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        function getCookie(name) {
+            const cookieName = name + "=";
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const cookieArray = decodedCookie.split(';');
+            for (let i = 0; i < cookieArray.length; i++) {
+                let cookie = cookieArray[i];
+                while (cookie.charAt(0) == ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(cookieName) == 0) {
+                    return cookie.substring(cookieName.length, cookie.length);
+                }
+            }
+            return "";
+        }
+
+        const toggleButton = document.getElementById('toggle-theme');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                setCookie('theme', 'dark', 7); // Salva o tema 'dark' por 7 dias
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                setCookie('theme', 'light', 7); // Salva o tema 'light' por 7 dias
+            }
+        });
+
+        window.onload = function () {
+            const savedTheme = getCookie('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.add('light-mode'); // Aplica o light mode por padrão
+            }
+        };
+    </script>
 </body>
 
 </html>

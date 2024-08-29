@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+    font-family: 'cubanoregular';
+    src: url('/dist/fonts/cubano-webfont.woff2') format('woff2'),
+         url('/dist/fonts/cubano-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12354,6 +12355,80 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "cubanoregular";
+  src: url("/dist/fonts/cubano-webfont.woff2") format("woff2"), url("/dist/fonts/cubano-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.header-site {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #302C2C;
+}
+.header-site .logo-custom {
+  display: inline-block;
+  font-family: "cubanoregular";
+  font-size: 36px;
+  color: #F5F2F2;
+  text-decoration: none;
+}
+.header-site .logo-custom:hover {
+  color: #15B5FF;
+}
+.header-site .link-header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #F5F2F2;
+  text-decoration: none;
+  display: inline-block;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.header-site .link-header:hover {
+  color: #15B5FF;
+}
+
+.form-seach-header {
+  position: relative;
+}
+.form-seach-header input {
+  width: 100%;
+  height: 57px;
+  border-radius: 12px;
+  padding: 5px 17px;
+  border: 2px solid #F5F2F2;
+  background-color: #F5F2F2;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #302C2C;
+}
+.form-seach-header input:focus {
+  outline: none;
+  border-color: #15B5FF;
+}
+.form-seach-header input::placeholder {
+  color: #9B9494;
+}
+.form-seach-header button {
+  position: absolute;
+  right: 11px;
+  top: 10px;
+  z-index: 1;
+  border: 0;
+  background-color: transparent;
+}
+
+.container {
+  max-width: 1690px;
 }
 
 /**
