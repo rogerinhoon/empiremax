@@ -20,5 +20,5 @@ npm i bootstrap@5.3.3
 
 **Compilação do arquivo SCSS para CSS:**
 ```
-sass --watch src/scss/app.scss:dist/css/app.css
+sass --watch src/scss/app.scss:assets/css/app.css
 ```

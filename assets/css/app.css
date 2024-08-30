@@ -12357,26 +12357,91 @@ textarea.form-control-lg {
   }
 }
 
+.light-mode::after {
+  background-color: rgba(245, 242, 242, 0.7);
+}
+.light-mode .header-site {
+  background-color: #302C2C;
+}
+.light-mode .header-site .logo-custom {
+  color: #F5F2F2;
+}
+.light-mode .header-site .link-header {
+  color: #F5F2F2;
+}
+.light-mode .btn-icon-header {
+  background-color: #F5F2F2;
+}
+.light-mode .btn-icon-header .dark {
+  display: none;
+}
+.light-mode .form-seach-header input {
+  color: #302C2C;
+  border: 2px solid #F5F2F2;
+  background-color: #F5F2F2;
+}
+
+.dark-mode::after {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.dark-mode .header-site {
+  background-color: #F5F2F2;
+}
+.dark-mode .header-site .logo-custom {
+  color: #000000;
+}
+.dark-mode .header-site .link-header {
+  color: #000000;
+}
+.dark-mode .btn-icon-header {
+  background-color: #302C2C;
+}
+.dark-mode .btn-icon-header .light {
+  display: none;
+}
+.dark-mode .form-seach-header input {
+  color: #F5F2F2;
+  border: 2px solid #302C2C;
+  background-color: #302C2C;
+}
+
+.btn-icon-header {
+  display: inline-block;
+  width: 57px;
+  height: 57px;
+  line-height: 50px;
+  padding: 0;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }
 
 @font-face {
   font-family: "cubanoregular";
-  src: url("/dist/fonts/cubano-webfont.woff2") format("woff2"), url("/dist/fonts/cubano-webfont.woff") format("woff");
+  src: url("/assets/fonts/cubano-webfont.woff2") format("woff2"), url("/assets/fonts/cubano-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+.footer-site {
+  position: relative;
+  z-index: 1;
+}
+
 .header-site {
   width: 100%;
   padding: 30px 0;
-  background-color: #302C2C;
+  position: relative;
+  z-index: 1;
 }
 .header-site .logo-custom {
   display: inline-block;
   font-family: "cubanoregular";
   font-size: 36px;
-  color: #F5F2F2;
   text-decoration: none;
 }
 .header-site .logo-custom:hover {
@@ -12386,7 +12451,6 @@ textarea.form-control-lg {
   font-family: "Montserrat", sans-serif;
   font-size: 30px;
   font-weight: 600;
-  color: #F5F2F2;
   text-decoration: none;
   display: inline-block;
   text-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
@@ -12403,13 +12467,10 @@ textarea.form-control-lg {
   height: 57px;
   border-radius: 12px;
   padding: 5px 17px;
-  border: 2px solid #F5F2F2;
-  background-color: #F5F2F2;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
   font-family: "Montserrat", sans-serif;
   font-size: 26px;
   font-weight: 600;
-  color: #302C2C;
 }
 .form-seach-header input:focus {
   outline: none;
@@ -12427,8 +12488,34 @@ textarea.form-control-lg {
   background-color: transparent;
 }
 
+body {
+  position: relative;
+}
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0.15;
+}
+body::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  position: absolute;
+}
+
 .container {
   max-width: 1690px;
+}
+
+.main-site {
+  position: relative;
+  z-index: 1;
 }
 
 /**
