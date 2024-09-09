@@ -12375,6 +12375,9 @@ textarea.form-control-lg {
 .light-mode .btn-icon-header .dark {
   display: none;
 }
+.light-mode .btns {
+  background-color: #F5F2F2;
+}
 .light-mode .form-seach-header input {
   color: #302C2C;
   border: 2px solid #F5F2F2;
@@ -12399,6 +12402,9 @@ textarea.form-control-lg {
 .dark-mode .btn-icon-header .light {
   display: none;
 }
+.dark-mode .btns {
+  background-color: #302C2C;
+}
 .dark-mode .form-seach-header input {
   color: #F5F2F2;
   border: 2px solid #302C2C;
@@ -12411,6 +12417,16 @@ textarea.form-control-lg {
   height: 57px;
   line-height: 50px;
   padding: 0;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #000000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btns {
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 20px;
   text-align: center;
   border-radius: 12px;
   border: 1px solid #000000;

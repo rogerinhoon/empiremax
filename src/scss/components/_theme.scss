@@ -22,6 +22,10 @@
             display: none;
         }
     }
+    
+    .btns {
+        background-color: $beige-light;
+    }
 
     .form-seach-header {
         input {
@@ -55,6 +59,10 @@
         .light {
             display: none;
         }
+    }
+    
+    .btns {
+        background-color: $gray-dark;
     }
 
     .form-seach-header {
