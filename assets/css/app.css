@@ -12572,6 +12572,11 @@ textarea.form-control-lg {
   width: 22px;
 }
 
+.offcanvas {
+  max-width: 300px;
+  padding-top: 40px;
+}
+
 body {
   position: relative;
 }
