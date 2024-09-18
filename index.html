@@ -39,21 +39,14 @@
     <script src="assets/js/jquery-3.7.1.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <style>
-        body::before {
-            background-image: url(/assets/img/bg-home-01.png);
-        }
-    </style>
 </head>
 
-<body class="h-100">
+<body class="light-mode">
     <header class="header-site">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-between">
                 <div class="col-auto">
-                    <a href="/" class="logo-custom" title="EmpireMax">
-                        EmpireMax
-                    </a>
+                    <a href="/" class="logo-custom" title="EmpireMax">EmpireMax</a>
                 </div>
                 <div class="col-lg-5">
                     <form action="" class="form-seach-header">
@@ -64,32 +57,23 @@
                     </form>
                 </div>
                 <div class="col-auto">
-                    <a href="blog.html" title="Blog" class="link-header">Blog</a>      
+                    <a href="blog.html" title="Blog" class="link-header mx-2">Blog</a>
+                    <a href="categorias.html" title="Categorias" class="link-header mx-2">Categorias</a>
                 </div>
                 <div class="col-auto">
-                    <a href="categorias.html" title="Categorias" class="link-header">Categorias</a>
-                </div>
-                <div class="col-auto">
-                    <a href="#" class="btn-icon-header" title="notificações">
+                    <a href="#" class="btn-icon-header mx-2" title="notificações">
                         <img src="assets/img/icon-notification.png" alt="notification" class="light">
                         <img src="assets/img/icon-notification-white.png" alt="notification" class="dark">
                     </a>
-                </div>
-                <div class="col-auto">
-                    <a href="#" class="btn-icon-header" title="carrinho">
+                    <a href="#" class="btn-icon-header mx-2" title="carrinho">
                         <img src="assets/img/icon-cart.png" alt="cart" class="light">
                         <img src="assets/img/icon-cart-white.png" alt="cart" class="dark">
                     </a>
-                </div>
-                <div class="col-auto">
-                    <a href="#" class="btn-icon-header" id="toggle-theme" title="escolher tema">
+                    <a href="#" class="btn-icon-header mx-2" id="toggle-theme" title="escolher tema">
                         <img src="assets/img/icon-moon.png" alt="moon" class="light">
                         <img src="assets/img/icon-sun.png" alt="moon" class="dark">
                     </a>
-                </div>
-                <div class="col-auto"></div>
-                <div class="col-auto">
-                    <a href="#" class="btns" title="login entrar">Entrar</a>
+                    <a href="#" class="btns entrar montserrat ms-2" title="login entrar">Entrar</a>
                 </div>
             </div>
         </div>
@@ -97,13 +81,17 @@
 
     <main class="main-site">
         <div class="container">
-            Conteúdo
+            <div class="row">
+                <div class="col-12">
+                    <div style="height: 1200px;">
+                        <h3>Conteúdo</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
-    <footer class="footer-site">
-        
-    </footer>
+    <footer class="footer-site"></footer>
 
     <script>
         // Funções para manipular cookies
@@ -149,8 +137,10 @@
             const savedTheme = getCookie('theme');
             if (savedTheme === 'dark') {
                 body.classList.add('dark-mode');
+                body.classList.remove('light-mode');
             } else {
                 body.classList.add('light-mode'); // Aplica o light mode por padrão
+                body.classList.remove('dark-mode');
             }
         };
     </script>

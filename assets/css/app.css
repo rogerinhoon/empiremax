@@ -12357,8 +12357,8 @@ textarea.form-control-lg {
   }
 }
 
-.light-mode::after {
-  background-color: rgba(245, 242, 242, 0.7);
+.light-mode {
+  background-color: #f5f2f2;
 }
 .light-mode .header-site {
   background-color: #302C2C;
@@ -12376,6 +12376,7 @@ textarea.form-control-lg {
   display: none;
 }
 .light-mode .btns {
+  color: #302C2C;
   background-color: #F5F2F2;
 }
 .light-mode .form-seach-header input {
@@ -12384,8 +12385,8 @@ textarea.form-control-lg {
   background-color: #F5F2F2;
 }
 
-.dark-mode::after {
-  background-color: rgba(0, 0, 0, 0.7);
+.dark-mode {
+  background-color: #302c2c;
 }
 .dark-mode .header-site {
   background-color: #F5F2F2;
@@ -12403,6 +12404,7 @@ textarea.form-control-lg {
   display: none;
 }
 .dark-mode .btns {
+  color: #F5F2F2;
   background-color: #302C2C;
 }
 .dark-mode .form-seach-header input {
@@ -12410,27 +12412,52 @@ textarea.form-control-lg {
   border: 2px solid #302C2C;
   background-color: #302C2C;
 }
+.dark-mode .main-site h1,
+.dark-mode .main-site h2,
+.dark-mode .main-site h3,
+.dark-mode .main-site h4,
+.dark-mode .main-site h5,
+.dark-mode .main-site h6,
+.dark-mode .main-site p {
+  color: #F5F2F2;
+}
 
 .btn-icon-header {
   display: inline-block;
-  width: 57px;
-  height: 57px;
-  line-height: 50px;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
   padding: 0;
   text-align: center;
   border-radius: 12px;
   border: 1px solid #000000;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
 }
+.btn-icon-header:hover {
+  border-color: #15B5FF;
+  background-color: #15B5FF;
+}
+.btn-icon-header img {
+  width: 24px;
+}
 
 .btns {
   display: inline-block;
-  line-height: 50px;
+  line-height: 38px;
+  font-size: 20px;
   padding: 0 20px;
   text-align: center;
+  text-decoration: none;
   border-radius: 12px;
   border: 1px solid #000000;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+.btns:hover {
+  border-color: #15B5FF;
+  background-color: #15B5FF;
+}
+.btns.entrar {
+  font-weight: 600;
 }
 
 .montserrat {
@@ -12450,14 +12477,15 @@ textarea.form-control-lg {
 
 .header-site {
   width: 100%;
-  padding: 30px 0;
-  position: relative;
-  z-index: 1;
+  padding: 15px 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
 }
 .header-site .logo-custom {
   display: inline-block;
   font-family: "cubanoregular";
-  font-size: 36px;
+  font-size: 34px;
   text-decoration: none;
 }
 .header-site .logo-custom:hover {
@@ -12465,7 +12493,7 @@ textarea.form-control-lg {
 }
 .header-site .link-header {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
@@ -12480,12 +12508,12 @@ textarea.form-control-lg {
 }
 .form-seach-header input {
   width: 100%;
-  height: 57px;
+  height: 45px;
   border-radius: 12px;
   padding: 5px 17px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
   font-family: "Montserrat", sans-serif;
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 600;
 }
 .form-seach-header input:focus {
@@ -12498,10 +12526,13 @@ textarea.form-control-lg {
 .form-seach-header button {
   position: absolute;
   right: 11px;
-  top: 10px;
+  top: 7px;
   z-index: 1;
   border: 0;
   background-color: transparent;
+}
+.form-seach-header button img {
+  width: 22px;
 }
 
 body {
@@ -12532,6 +12563,7 @@ body::after {
 .main-site {
   position: relative;
   z-index: 1;
+  padding-top: 81px;
 }
 
 /**
