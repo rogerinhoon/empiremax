@@ -28,6 +28,12 @@
             color: $blue-light;
         }
     }
+
+    @media (max-width:480px) {
+        .logo-custom {
+            font-size: 20px;
+        }
+    }
 }
 
 .form-seach-header {

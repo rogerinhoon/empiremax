@@ -12455,6 +12455,12 @@ textarea.form-control-lg {
 .btn-icon-header svg {
   width: 20px;
 }
+@media (max-width: 480px) {
+  .btn-icon-header {
+    margin-left: 5px !important;
+    margin-right: 0 !important;
+  }
+}
 
 .btns {
   display: inline-block;
@@ -12527,6 +12533,11 @@ textarea.form-control-lg {
 }
 .header-site .link-header:hover {
   color: #15B5FF;
+}
+@media (max-width: 480px) {
+  .header-site .logo-custom {
+    font-size: 20px;
+  }
 }
 
 .form-seach-header {
