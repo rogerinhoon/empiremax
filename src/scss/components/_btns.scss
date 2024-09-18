@@ -23,8 +23,19 @@
     }
 
     @media (max-width:480px) {
+        width: 36px;
+        height: 36px;
+        line-height: 30px;
         margin-left: 5px !important;
         margin-right: 0 !important;
+
+        img {
+            width: 18px;
+        }
+
+        svg {
+            width: 17px;
+        }
     }
 }
 

@@ -12457,8 +12457,17 @@ textarea.form-control-lg {
 }
 @media (max-width: 480px) {
   .btn-icon-header {
+    width: 36px;
+    height: 36px;
+    line-height: 30px;
     margin-left: 5px !important;
     margin-right: 0 !important;
+  }
+  .btn-icon-header img {
+    width: 18px;
+  }
+  .btn-icon-header svg {
+    width: 17px;
   }
 }
 
