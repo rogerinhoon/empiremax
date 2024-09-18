@@ -12379,10 +12379,16 @@ textarea.form-control-lg {
   color: #302C2C;
   background-color: #F5F2F2;
 }
+.light-mode .btn-close-mobile svg path {
+  fill: #F5F2F2;
+}
 .light-mode .form-seach-header input {
   color: #302C2C;
   border: 2px solid #F5F2F2;
   background-color: #F5F2F2;
+}
+.light-mode .offcanvas {
+  background-color: #302C2C;
 }
 
 .dark-mode {
@@ -12403,6 +12409,9 @@ textarea.form-control-lg {
 .dark-mode .btn-icon-header .light {
   display: none;
 }
+.dark-mode .btn-icon-header svg path {
+  fill: #F5F2F2;
+}
 .dark-mode .btns {
   color: #F5F2F2;
   background-color: #302C2C;
@@ -12411,6 +12420,9 @@ textarea.form-control-lg {
   color: #F5F2F2;
   border: 2px solid #302C2C;
   background-color: #302C2C;
+}
+.dark-mode .offcanvas {
+  background-color: #F5F2F2;
 }
 .dark-mode .main-site h1,
 .dark-mode .main-site h2,
@@ -12440,6 +12452,9 @@ textarea.form-control-lg {
 .btn-icon-header img {
   width: 24px;
 }
+.btn-icon-header svg {
+  width: 20px;
+}
 
 .btns {
   display: inline-block;
@@ -12458,6 +12473,17 @@ textarea.form-control-lg {
 }
 .btns.entrar {
   font-weight: 600;
+}
+
+.btn-close-mobile {
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.btn-close-mobile svg {
+  width: 30px;
 }
 
 .montserrat {

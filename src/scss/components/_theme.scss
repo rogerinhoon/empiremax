@@ -26,12 +26,24 @@
         background-color: $beige-light;
     }
 
+    .btn-close-mobile {
+        svg {
+            path {
+                fill: $beige-light;
+            }
+        }
+    }
+
     .form-seach-header {
         input {
             color: $gray-dark;
             border: 2px solid $beige-light;
             background-color: $beige-light;
         }
+    }
+
+    .offcanvas {
+        background-color: $gray-dark;
     }
 }
 
@@ -56,6 +68,12 @@
         .light {
             display: none;
         }
+
+        svg {
+            path {
+                fill: $beige-light;
+            }
+        }
     }
 
     .btns {
@@ -69,6 +87,10 @@
             border: 2px solid $gray-dark;
             background-color: $gray-dark;
         }
+    }
+
+    .offcanvas {
+        background-color: $beige-light;
     }
 
     .main-site {

@@ -17,6 +17,10 @@
     img {
         width: 24px;
     }
+
+    svg {
+        width: 20px;
+    }
 }
 
 .btns {
@@ -37,5 +41,18 @@
 
     &.entrar {
         font-weight: 600;
+    }
+}
+
+.btn-close-mobile {
+    border: 0;
+    background-color: transparent;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    svg {
+        width: 30px;
     }
 }
