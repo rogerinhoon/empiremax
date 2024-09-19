@@ -2,7 +2,7 @@
     background-color: rgba($color: $beige-light, $alpha: 1);
 
     .header-site {
-        background-color: $gray-dark;
+        background-color: rgba($color: $gray-dark, $alpha: 0.95);
 
         .logo-custom {
             color: $beige-light;
@@ -45,13 +45,17 @@
     .offcanvas {
         background-color: $gray-dark;
     }
+
+    .header-title-1 {
+        border-bottom: 1px solid #B0B0B0;
+    }
 }
 
 .dark-mode {
-    background-color: rgba($color: $gray-dark, $alpha: 1);
+    background-color: rgba($color: $gray-dark, $alpha: 0.95);
 
     .header-site {
-        background-color: $beige-light;
+        background-color: rgba($color: $beige-light, $alpha: 0.95);
 
         .logo-custom {
             color: #000000;
@@ -104,5 +108,9 @@
         p {
             color: $beige-light;
         }
+    }
+
+    .header-title-1 {
+        border-bottom: 1px solid #B0B0B0;
     }
 }

@@ -7,7 +7,31 @@
 @font-face {
     font-family: 'cubanoregular';
     src: url('/assets/fonts/cubano-webfont.woff2') format('woff2'),
-         url('/assets/fonts/cubano-webfont.woff') format('woff');
+        url('/assets/fonts/cubano-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+.f-cubano {
+    font-family: 'cubanoregular';
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+h4 {
+    font-size: 36px;
+}
+
+h5 {
+    font-size: 30px;
+}
+
+h6 {
+    font-size: 20px;
 }

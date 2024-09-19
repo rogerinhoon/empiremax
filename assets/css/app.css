@@ -12361,7 +12361,7 @@ textarea.form-control-lg {
   background-color: #f5f2f2;
 }
 .light-mode .header-site {
-  background-color: #302C2C;
+  background-color: rgba(48, 44, 44, 0.95);
 }
 .light-mode .header-site .logo-custom {
   color: #F5F2F2;
@@ -12390,12 +12390,15 @@ textarea.form-control-lg {
 .light-mode .offcanvas {
   background-color: #302C2C;
 }
+.light-mode .header-title-1 {
+  border-bottom: 1px solid #B0B0B0;
+}
 
 .dark-mode {
-  background-color: #302c2c;
+  background-color: rgba(48, 44, 44, 0.95);
 }
 .dark-mode .header-site {
-  background-color: #F5F2F2;
+  background-color: rgba(245, 242, 242, 0.95);
 }
 .dark-mode .header-site .logo-custom {
   color: #000000;
@@ -12432,6 +12435,9 @@ textarea.form-control-lg {
 .dark-mode .main-site h6,
 .dark-mode .main-site p {
   color: #F5F2F2;
+}
+.dark-mode .header-title-1 {
+  border-bottom: 1px solid #B0B0B0;
 }
 
 .btn-icon-header {
@@ -12501,6 +12507,10 @@ textarea.form-control-lg {
   width: 30px;
 }
 
+.card-em-1 {
+  position: relative;
+}
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }
@@ -12511,6 +12521,30 @@ textarea.form-control-lg {
   font-weight: normal;
   font-style: normal;
 }
+.f-cubano {
+  font-family: "cubanoregular";
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+h5 {
+  font-size: 30px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
 .footer-site {
   position: relative;
   z-index: 1;
@@ -12522,12 +12556,14 @@ textarea.form-control-lg {
   position: fixed;
   z-index: 5;
   top: 0;
+  backdrop-filter: blur(1.5px);
 }
 .header-site .logo-custom {
   display: inline-block;
   font-family: "cubanoregular";
   font-size: 34px;
   text-decoration: none;
+  line-height: 1;
 }
 .header-site .logo-custom:hover {
   color: #15B5FF;
@@ -12554,7 +12590,7 @@ textarea.form-control-lg {
 }
 .form-seach-header input {
   width: 100%;
-  height: 45px;
+  height: 40px;
   border-radius: 12px;
   padding: 5px 17px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
@@ -12571,8 +12607,8 @@ textarea.form-control-lg {
 }
 .form-seach-header button {
   position: absolute;
-  right: 11px;
-  top: 7px;
+  right: 8px;
+  top: 5px;
   z-index: 1;
   border: 0;
   background-color: transparent;
@@ -12614,7 +12650,15 @@ body::after {
 .main-site {
   position: relative;
   z-index: 1;
-  padding-top: 81px;
+  padding-top: 72px;
+}
+
+.pt-em-1 {
+  padding-top: 9vw;
+}
+
+.lh-1 {
+  line-height: 1;
 }
 
 /**
