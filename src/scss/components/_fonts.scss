@@ -16,22 +16,46 @@
     font-family: 'cubanoregular';
 }
 
-h2 {
-    font-size: 48px;
+@media (min-width: 992px) {
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 42px;
+    }
+
+    h4 {
+        font-size: 36px;
+    }
+
+    h5 {
+        font-size: 30px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
 }
 
-h3 {
-    font-size: 42px;
-}
+@media (max-width: 991px) {
+    h2 {
+        font-size: 38px;
+    }
 
-h4 {
-    font-size: 36px;
-}
+    h3 {
+        font-size: 32px;
+    }
 
-h5 {
-    font-size: 30px;
-}
+    h4 {
+        font-size: 26px;
+    }
 
-h6 {
-    font-size: 20px;
+    h5 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
 }

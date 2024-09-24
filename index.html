@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="assets/css/app.css">
 
     <script src="assets/js/jquery-3.7.1.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
@@ -61,10 +61,21 @@
                     <a href="categorias.html" title="Categorias" class="link-header mx-2">Categorias</a>
                 </div>
                 <div class="col-auto">
-                    <a href="#" class="btn-icon-header mx-2" title="notificações">
-                        <img src="assets/img/icon-notification.png" alt="notification" class="light">
-                        <img src="assets/img/icon-notification-white.png" alt="notification" class="dark">
-                    </a>
+                    <div class="dropdown d-inline-block">
+                        <a href="javascript:void(0);" class="btn-icon-header mx-2" title="notificações" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/img/icon-notification.png" alt="notification" class="light">
+                            <img src="assets/img/icon-notification-white.png" alt="notification" class="dark">
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-scroll">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Action 4</a></li>
+                            <li><a class="dropdown-item" href="#">Action 5</a></li>
+                            <li><a class="dropdown-item" href="#">Action 6</a></li>
+                            <li><a class="dropdown-item" href="#">Action 7</a></li>
+                        </ul>
+                    </div>
                     <a href="#" class="btn-icon-header mx-2" title="carrinho">
                         <img src="assets/img/icon-cart.png" alt="cart" class="light">
                         <img src="assets/img/icon-cart-white.png" alt="cart" class="dark">
@@ -87,42 +98,41 @@
                 </div>
             </div>
         </div>
+    </header>
 
-        <!-- menu mobile -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <button type="button" class="btn-close-mobile" data-bs-dismiss="offcanvas" aria-label="Close">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path
-                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
-                    </svg>
-                </button>
+    <!-- menu mobile -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close-mobile" data-bs-dismiss="offcanvas" aria-label="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+
+            <div class="mb-4">
+                <div>
+                    <a href="blog.html" title="Blog" class="link-header mb-2">Blog</a>
+                </div>
+                <div>
+                    <a href="categorias.html" title="Categorias" class="link-header">Categorias</a>
+                </div>
             </div>
-            <div class="offcanvas-body">
-
-                <div class="mb-4">
-                    <div>
-                        <a href="blog.html" title="Blog" class="link-header mb-2">Blog</a>
-                    </div>
-                    <div>
-                        <a href="categorias.html" title="Categorias" class="link-header">Categorias</a>
-                    </div>
-                </div>
-                <div class="mb-4">
-                    <a href="#" class="btns entrar montserrat mb-2" title="login entrar">Entrar</a>
-                </div>
-                <div class="">
-                    <form action="" class="form-seach-header">
-                        <input type="text" placeholder="Produto...">
-                        <button>
-                            <img src="assets/img/icon-search.png" alt="icone">
-                        </button>
-                    </form>
-                </div>
+            <div class="mb-4">
+                <a href="#" class="btns entrar montserrat mb-2" title="login entrar">Entrar</a>
+            </div>
+            <div class="">
+                <form action="" class="form-seach-header">
+                    <input type="text" placeholder="Produto...">
+                    <button>
+                        <img src="assets/img/icon-search.png" alt="icone">
+                    </button>
+                </form>
             </div>
         </div>
-    </header>
+    </div>
 
     <main class="main-site">
         <div class="container">
@@ -130,10 +140,14 @@
                 <div class="col-lg-5 text-center pt-em-1 mb-4 mb-lg-5">
                     <h2 class="f-cubano">lorem ipsum</h2>
                     <h5 class="f-cubano">Contas, itens digitais, jogos, gift cards, gold e muito mais!</h5>
+                    <div class="text-center mt-4 mt-lg-5">
+                        <a href="#" class="btn btn-primary mx-2" title="Ver Produtos">Ver Produtos</a>
+                        <a href="#" class="btn btn-primary mx-2" title="Como Funciona">Como Funciona</a>
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div style="height: 1200px;">
                         <div class="header-title-1">

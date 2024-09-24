@@ -12507,6 +12507,21 @@ textarea.form-control-lg {
   width: 30px;
 }
 
+.btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 10px 35px;
+  border-radius: 12px;
+}
+.btn.btn-primary {
+  background-color: #15B5FF;
+  border: 2px solid #302C2C;
+}
+.btn.btn-primary:hover {
+  background-color: #038bca;
+}
+
 .card-em-1 {
   position: relative;
 }
@@ -12525,26 +12540,40 @@ textarea.form-control-lg {
   font-family: "cubanoregular";
 }
 
-h2 {
-  font-size: 48px;
+@media (min-width: 992px) {
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 42px;
+  }
+  h4 {
+    font-size: 36px;
+  }
+  h5 {
+    font-size: 30px;
+  }
+  h6 {
+    font-size: 20px;
+  }
 }
-
-h3 {
-  font-size: 42px;
+@media (max-width: 991px) {
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 16px;
+  }
 }
-
-h4 {
-  font-size: 36px;
-}
-
-h5 {
-  font-size: 30px;
-}
-
-h6 {
-  font-size: 20px;
-}
-
 .footer-site {
   position: relative;
   z-index: 1;
@@ -12620,6 +12649,12 @@ h6 {
 .offcanvas {
   max-width: 300px;
   padding-top: 40px;
+}
+
+.dropdown-menu-scroll {
+  max-height: 200px;
+  width: 300px;
+  overflow-y: auto;
 }
 
 body {
