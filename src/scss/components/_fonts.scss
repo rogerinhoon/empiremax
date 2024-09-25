@@ -15,6 +15,17 @@
 .f-cubano {
     font-family: 'cubanoregular';
 }
+.text-blue-light {
+    color: $blue-light;
+}
+
+.text-success {
+    color: --bs-success;
+}
+
+.text-danger {
+    color: --bs-danger;
+}
 
 @media (min-width: 992px) {
     h2 {

@@ -12522,6 +12522,15 @@ textarea.form-control-lg {
   background-color: #038bca;
 }
 
+.btn-see-all {
+  font-size: 16px;
+  color: #000000;
+  font-weight: 600;
+}
+.btn-see-all:hover {
+  color: #15B5FF;
+}
+
 .card-em-1 {
   position: relative;
 }
@@ -12538,6 +12547,18 @@ textarea.form-control-lg {
 }
 .f-cubano {
   font-family: "cubanoregular";
+}
+
+.text-blue-light {
+  color: #15B5FF;
+}
+
+.text-success {
+  color: --bs-success;
+}
+
+.text-danger {
+  color: --bs-danger;
 }
 
 @media (min-width: 992px) {
@@ -12651,10 +12672,49 @@ textarea.form-control-lg {
   padding-top: 40px;
 }
 
+.dropdown-menu {
+  padding: 20px 20px;
+  border-radius: 10px !important;
+  border: 2px solid #302C2C !important;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
 .dropdown-menu-scroll {
-  max-height: 200px;
+  max-height: 300px;
   width: 300px;
   overflow-y: auto;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+.dropdown-menu-scroll li {
+  padding: 0 0 15px 0;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #CECECE;
+}
+.dropdown-menu-scroll li:last-of-type {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.dropdown-menu-scroll li a {
+  color: #302C2C;
+  text-decoration: none;
+}
+.dropdown-menu-scroll li a:hover p {
+  text-decoration: underline;
+}
+.dropdown-menu-scroll li a:hover p.fs-14 {
+  text-decoration: none;
+}
+.dropdown-menu-scroll p {
+  font-size: 14px;
+  line-height: 1.3;
+}
+.dropdown-menu-scroll p.fs-14 {
+  font-size: 13px;
+}
+.dropdown-menu-scroll p span {
+  font-weight: 600;
 }
 
 body {
