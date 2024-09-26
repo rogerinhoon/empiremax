@@ -1,3 +1,26 @@
 .card-em-1 {
     position: relative;
 }
+
+.card-thumb {
+    position: relative;
+
+    &:hover {
+        img {
+            transform: translateY(-6px);
+        }
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+
+        img {
+            position: relative;
+            border-radius: 20px;
+            border: 1px solid $black;
+            transition: all .2s ease-in-out 0s;
+            box-shadow: 0 3px 6px rgba($color: $black, $alpha: 0.25);
+        }
+    }
+}
