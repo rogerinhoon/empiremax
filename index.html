@@ -221,63 +221,69 @@
                     <h2 class="f-cubano">lorem ipsum</h2>
                     <h5 class="f-cubano">Contas, itens digitais, jogos, gift cards, gold e muito mais!</h5>
                     <div class="text-center mt-4 mt-lg-5">
-                        <a href="#" class="btn btn-primary mx-2" title="Ver Produtos">Ver Produtos</a>
-                        <a href="#" class="btn btn-primary mx-2" title="Como Funciona">Como Funciona</a>
+                        <a href="#" class="btn btn-primary mx-2 mb-3" title="Ver Produtos">Ver Produtos</a>
+                        <a href="#" class="btn btn-primary mx-2 mb-3" title="Como Funciona">Como Funciona</a>
                     </div>
                 </div>
             </div>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mt-lg-0 mt-3">
                 <div class="col-lg-10">
-                    <div style="height: 1200px;">
-                        <div class="header-title-1">
-                            <h5 class="f-cubano lh-1">Populares</h5>
-                        </div>
+                    <div class="header-title-1">
+                        <h5 class="f-cubano lh-1">Populares</h5>
+                    </div>
 
-                        <div class="owl-carousel owl-carousel-populares">
-                            <div class="item">
-                                <div class="card-thumb">
-                                    <a href="#">
-                                        <img src="/assets/img/jogo-warframe.jpeg" alt="Jogo" class="w-100">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card-thumb">
-                                    <a href="#">
-                                        <img src="/assets/img/jogo-warframe.jpeg" alt="Jogo" class="w-100">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card-thumb">
-                                    <a href="#">
-                                        <img src="/assets/img/jogo-warframe.jpeg" alt="Jogo" class="w-100">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card-thumb">
-                                    <a href="#">
-                                        <img src="/assets/img/jogo-warframe.jpeg" alt="Jogo" class="w-100">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card-thumb">
-                                    <a href="#">
-                                        <img src="/assets/img/jogo-warframe.jpeg" alt="Jogo" class="w-100">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="card-thumb">
-                                    <a href="#">
-                                        <img src="/assets/img/jogo-warframe.jpeg" alt="Jogo" class="w-100">
-                                    </a>
-                                </div>
+                    <div class="owl-carousel owl-carousel-populares">
+                        <div class="item">
+                            <div class="card-thumb">
+                                <a href="#">
+                                    <img src="/assets/img/jogo-warframe.jpeg" alt="Jogo" class="w-100">
+                                </a>
                             </div>
                         </div>
+                        <div class="item">
+                            <div class="card-thumb">
+                                <a href="#">
+                                    <img src="/assets/img/jogo-minicraft.png" alt="Jogo" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-thumb">
+                                <a href="#">
+                                    <img src="/assets/img/jogo-valorant.png" alt="Jogo" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-thumb">
+                                <a href="#">
+                                    <img src="/assets/img/jogo-dota.jpeg" alt="Jogo" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-thumb">
+                                <a href="#">
+                                    <img src="/assets/img/jogo-albion.jpeg" alt="Jogo" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card-thumb">
+                                <a href="#">
+                                    <img src="/assets/img/jogo-cs.png" alt="Jogo" class="w-100">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center pt-lg-5 mt-lg-4 pt-4 mt-2">
+                <div class="col-lg-10">
+                    <div class="header-title-1">
+                        <h5 class="f-cubano lh-1">Produtos mais venddidos</h5>
                     </div>
                 </div>
             </div>
@@ -289,9 +295,15 @@
     <!--  -->
     <script>
         $('.owl-carousel-populares').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 20,
             nav: true,
+            navText: [
+                // SVG para o botão de "anterior"
+                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="24" height="24"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>', 
+                // SVG para o botão de "próximo"
+                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="24" height="24"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>'
+            ],
             responsive: {
                 0: {
                     items: 3
@@ -303,7 +315,7 @@
                     items: 6
                 }
             }
-        })
+        });
     </script>
 
     <script>

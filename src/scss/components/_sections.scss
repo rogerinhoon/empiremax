@@ -32,7 +32,7 @@ body {
 }
 
 .pt-em-1 {
-    padding-top: 8vw;
+    padding-top: 6vw;
 }
 
 .lh-1 {
@@ -46,6 +46,64 @@ body {
         .owl-item {
             padding-top: 8px;
             padding-bottom: 8px;
+        }
+    }
+
+    .owl-nav {
+        width: 100%;
+        position: absolute;
+        top: 44%;
+
+        button {
+            width: 40px;
+            height: 40px;
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            background-color: $gray-dark !important;
+
+            svg {
+                position: relative;
+                top: -1px;
+
+                path {
+                    fill: $white;
+                }
+            }
+
+            &.disabled {
+                display: none;
+            }
+
+            &.owl-prev {
+                left: -16px;
+
+                svg {
+                    right: 1px;
+                }
+            }
+
+            &.owl-next {
+                right: -16px;
+
+                svg {
+                    left: 1px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 991px) {
+        .owl-nav {
+            button {
+                &.owl-prev {
+                    left: -8px;
+                }
+
+                &.owl-next {
+                    right: -8px;
+                }
+            }
         }
     }
 }
