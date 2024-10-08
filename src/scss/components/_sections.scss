@@ -25,6 +25,23 @@ body {
     max-width: 1690px;
 }
 
+.col-lg-20 {
+    flex: 0 0 auto;
+    width: 20%;
+}
+
+.bg-blue-light {
+    background-color: $blue-light !important;
+}
+
+.bg-green-light {
+    background-color: $green-light !important;
+}
+
+.bg-red-light {
+    background-color: $red-light !important;
+}
+
 .main-site {
     position: relative;
     z-index: 1;
@@ -41,6 +58,10 @@ body {
 
 .owl-carousel-populares {
     padding-top: 20px;
+
+    .owl-stage-outer {
+        overflow: inherit !important;
+    }
 
     &.owl-drag {
         .owl-item {

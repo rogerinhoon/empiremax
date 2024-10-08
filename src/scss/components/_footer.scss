@@ -1,4 +1,23 @@
 .footer-site {
     position: relative;
     z-index: 1;
+    padding: 40px 0;
+    margin-top: 50px;
+
+    .logo-custom {
+        display: inline-block;
+        font-family: 'cubanoregular';
+        font-size: 34px;
+        text-decoration: none;
+        line-height: 1;
+        color: $beige-light;
+
+        &:hover {
+            color: $blue-light;
+        }
+    }
+
+    .text-o-65 {
+        opacity: .65;
+    }
 }

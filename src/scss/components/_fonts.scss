@@ -15,6 +15,7 @@
 .f-cubano {
     font-family: 'cubanoregular';
 }
+
 .text-blue-light {
     color: $blue-light;
 }
@@ -25,6 +26,23 @@
 
 .text-danger {
     color: --bs-danger;
+}
+
+.text-red {
+    color: $red-light !important;
+}
+
+.text-green {
+    color: $green-light !important;
+}
+
+.f-w-300 {
+    font-weight: 300;
+}
+
+strong,
+b {
+    font-weight: 700;
 }
 
 @media (min-width: 992px) {
@@ -47,6 +65,10 @@
     h6 {
         font-size: 20px;
     }
+
+    .fs-20 {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -67,6 +89,10 @@
     }
 
     h6 {
+        font-size: 16px;
+    }
+
+    .fs-20 {
         font-size: 16px;
     }
 }

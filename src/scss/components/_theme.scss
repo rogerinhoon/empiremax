@@ -54,11 +54,33 @@
         &.btn-primary {
             background-color: $blue-light;
             border: 1px solid $blue;
-    
+
             &:hover {
                 background-color: $blue;
             }
         }
+    }
+
+    .card-em-2 {
+        border-color: $gray-dark;
+        background-color: $white;
+
+        figure {
+            border-color: $gray-dark;
+        }
+        .price {
+            color: $gray-dark;
+        }
+    }
+
+    .card-em-3 {
+        border: 1px solid $gray-dark;
+        background-color: $white;
+    }
+
+    .footer-site {
+        color: $white;
+        background-color: rgba($color: $black, $alpha: 0.95);
     }
 }
 
@@ -148,10 +170,39 @@
         &.btn-primary {
             background-color: $blue;
             border: 1px solid $blue-light;
-    
+
             &:hover {
                 background-color: $blue-light;
             }
+        }
+    }
+
+    .card-em-2 {
+        border-color: $white;
+        background-color: $gray-dark;
+
+        figure {
+            border-color: $white;
+        }
+
+        .price {
+            color: $beige-light;
+        }
+    }
+
+    .footer-site {
+        color: $white;
+        background-color: rgba($color: $black, $alpha: 0.95);
+    }
+
+    .card-em-3 {
+        border: 1px solid $beige-light;
+        background-color: rgba($color: $black, $alpha: 0.25);
+    }
+
+    .box-amount {
+        .amount {
+            color: $beige-light;
         }
     }
 }

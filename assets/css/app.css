@@ -12400,6 +12400,24 @@ textarea.form-control-lg {
 .light-mode .btn.btn-primary:hover {
   background-color: #0081bc;
 }
+.light-mode .card-em-2 {
+  border-color: #302C2C;
+  background-color: #ffffff;
+}
+.light-mode .card-em-2 figure {
+  border-color: #302C2C;
+}
+.light-mode .card-em-2 .price {
+  color: #302C2C;
+}
+.light-mode .card-em-3 {
+  border: 1px solid #302C2C;
+  background-color: #ffffff;
+}
+.light-mode .footer-site {
+  color: #ffffff;
+  background-color: rgba(18, 18, 21, 0.95);
+}
 
 .dark-mode {
   background-color: rgba(18, 18, 21, 0.95);
@@ -12465,6 +12483,27 @@ textarea.form-control-lg {
 }
 .dark-mode .btn.btn-primary:hover {
   background-color: #15B5FF;
+}
+.dark-mode .card-em-2 {
+  border-color: #ffffff;
+  background-color: #302C2C;
+}
+.dark-mode .card-em-2 figure {
+  border-color: #ffffff;
+}
+.dark-mode .card-em-2 .price {
+  color: #F5F2F2;
+}
+.dark-mode .footer-site {
+  color: #ffffff;
+  background-color: rgba(18, 18, 21, 0.95);
+}
+.dark-mode .card-em-3 {
+  border: 1px solid #F5F2F2;
+  background-color: rgba(18, 18, 21, 0.25);
+}
+.dark-mode .box-amount .amount {
+  color: #F5F2F2;
 }
 
 .btn-icon-header {
@@ -12539,7 +12578,20 @@ textarea.form-control-lg {
   font-weight: 600;
   font-size: 20px;
   padding: 10px 35px;
-  border-radius: 30px;
+  border-radius: 10px;
+}
+.btn.btn-small {
+  font-size: 16px;
+  padding: 6px 25px;
+  border-radius: 5px;
+}
+.btn.btn-inline {
+  border: 1px solid #302C2C;
+  background-color: #ffffff;
+}
+.btn.btn-inline:hover {
+  color: #ffffff !important;
+  background-color: #0081bc;
 }
 
 .btn-see-all {
@@ -12549,6 +12601,10 @@ textarea.form-control-lg {
 }
 .btn-see-all:hover {
   color: #15B5FF;
+}
+
+.badge.badge-small {
+  font-size: 11.8px;
 }
 
 .card-em-1 {
@@ -12586,6 +12642,108 @@ textarea.form-control-lg {
   object-fit: cover;
 }
 
+.card-em-2 {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid;
+}
+.card-em-2 a {
+  display: inline-block;
+  text-decoration: none;
+}
+.card-em-2 figure {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding-bottom: 70%;
+  margin-bottom: 0;
+  border-bottom: 1px solid;
+}
+.card-em-2 figure .imgThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+.card-em-2 figure .imgThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-em-2 .card-em-body {
+  padding: 12px 15px;
+}
+.card-em-2 .card-em-body p {
+  font-size: 15px;
+  line-height: 1.2;
+  min-height: 40px;
+}
+.card-em-2 .price {
+  display: block;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+.card-em-2 .box-price {
+  display: inline-block;
+  font-size: 11px;
+  line-height: 1;
+}
+.card-em-2 .box-price .text-red {
+  text-decoration: line-through;
+}
+.card-em-2 .box-price .badge.badge-small {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.card-em-3 {
+  position: relative;
+  padding: 30px 30px;
+  border-radius: 26px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.box-amount .box-a {
+  width: 15px;
+  height: 15px;
+  line-height: 11px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  color: #302C2C;
+  background-color: #ffffff;
+  border: 1px solid #302C2C;
+  cursor: pointer;
+}
+.box-amount .box-a:hover {
+  background-color: #15B5FF;
+}
+.box-amount .amount {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 11px;
+  display: inline-block;
+  margin: 0 4px;
+  position: relative;
+  top: 1px;
+}
+
+.stars-em {
+  display: inline-block;
+}
+
 .montserrat {
   font-family: "Montserrat", sans-serif;
 }
@@ -12612,6 +12770,23 @@ textarea.form-control-lg {
   color: --bs-danger;
 }
 
+.text-red {
+  color: #FF5F5F !important;
+}
+
+.text-green {
+  color: #05C273 !important;
+}
+
+.f-w-300 {
+  font-weight: 300;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
 @media (min-width: 992px) {
   h2 {
     font-size: 48px;
@@ -12626,6 +12801,9 @@ textarea.form-control-lg {
     font-size: 30px;
   }
   h6 {
+    font-size: 20px;
+  }
+  .fs-20 {
     font-size: 20px;
   }
 }
@@ -12645,10 +12823,29 @@ textarea.form-control-lg {
   h6 {
     font-size: 16px;
   }
+  .fs-20 {
+    font-size: 16px;
+  }
 }
 .footer-site {
   position: relative;
   z-index: 1;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+.footer-site .logo-custom {
+  display: inline-block;
+  font-family: "cubanoregular";
+  font-size: 34px;
+  text-decoration: none;
+  line-height: 1;
+  color: #F5F2F2;
+}
+.footer-site .logo-custom:hover {
+  color: #15B5FF;
+}
+.footer-site .text-o-65 {
+  opacity: 0.65;
 }
 
 .header-site {
@@ -12810,6 +13007,23 @@ body::after {
   max-width: 1690px;
 }
 
+.col-lg-20 {
+  flex: 0 0 auto;
+  width: 20%;
+}
+
+.bg-blue-light {
+  background-color: #15B5FF !important;
+}
+
+.bg-green-light {
+  background-color: #05C273 !important;
+}
+
+.bg-red-light {
+  background-color: #FF5F5F !important;
+}
+
 .main-site {
   position: relative;
   z-index: 1;
@@ -12826,6 +13040,9 @@ body::after {
 
 .owl-carousel-populares {
   padding-top: 20px;
+}
+.owl-carousel-populares .owl-stage-outer {
+  overflow: inherit !important;
 }
 .owl-carousel-populares.owl-drag .owl-item {
   padding-top: 8px;
