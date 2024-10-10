@@ -68,6 +68,7 @@
         figure {
             border-color: $gray-dark;
         }
+
         .price {
             color: $gray-dark;
         }
@@ -197,12 +198,39 @@
 
     .card-em-3 {
         border: 1px solid $beige-light;
-        background-color: rgba($color: $black, $alpha: 0.25);
+        background-color: rgba($color: $black, $alpha: 0.9);
     }
 
     .box-amount {
         .amount {
             color: $beige-light;
+        }
+    }
+
+    .rating-stars-em {
+        i {
+            color: $beige-light;
+        }
+    }
+
+    .border-right-1 {
+        &::after {
+            background-color: $beige-light;
+        }
+    }
+
+    .accordion {
+
+        .accordion-item,
+        .accordion-button {
+            color: $beige-light;
+            background-color: rgba($color: $gray-dark, $alpha: 0.95);
+        }
+
+        .accordion-button {
+            &::after {
+                filter: invert(1);
+            }
         }
     }
 }

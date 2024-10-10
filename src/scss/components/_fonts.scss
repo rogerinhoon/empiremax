@@ -39,6 +39,11 @@
 .f-w-300 {
     font-weight: 300;
 }
+p {
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
 
 strong,
 b {
@@ -69,6 +74,10 @@ b {
     .fs-20 {
         font-size: 20px;
     }
+
+    .fs-22 {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -94,5 +103,9 @@ b {
 
     .fs-20 {
         font-size: 16px;
+    }
+
+    .fs-22 {
+        font-size: 19px;
     }
 }
