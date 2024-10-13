@@ -88,6 +88,10 @@
         border: 2px solid $gray-dark;
     }
 
+    .form-control {
+        border: 2px solid $gray-dark;
+    }
+
     .card-em-4 {
         background-color: $white;
 
@@ -299,5 +303,9 @@
         &::after {
             background-color: #302f2f;
         }
+    }
+
+    .car-total {
+        border-color: $beige-light;
     }
 }

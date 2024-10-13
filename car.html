@@ -218,7 +218,65 @@
         <div class="container h-100">
             <div class="row justify-content-center h-100">
                 <div class="col-lg-7">
-                    modo de pagamento
+                    <div class="pt-lg-5 pt-4">
+                        <h5 class="f-cubano mb-4 mb-lg-5">Lorem ipsum</h5>
+                        <div class="car-tab">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
+                                        data-bs-target="#all-tab-pane" type="button" role="tab"
+                                        aria-controls="all-tab-pane" aria-selected="true">
+                                        Todos
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pix-tab" data-bs-toggle="tab"
+                                        data-bs-target="#pix-tab-pane" type="button" role="tab"
+                                        aria-controls="pix-tab-pane" aria-selected="false">
+                                        Pix
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="cards-tab" data-bs-toggle="tab"
+                                        data-bs-target="#cards-tab-pane" type="button" role="tab"
+                                        aria-controls="cards-tab-pane" aria-selected="false">
+                                        Cartão
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="crypto-tab" data-bs-toggle="tab"
+                                        data-bs-target="#crypto-tab-pane" type="button" role="tab"
+                                        aria-controls="crypto-tab-pane" aria-selected="false">
+                                        Crypto
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel"
+                                    aria-labelledby="all-tab" tabindex="0">
+                                    todos
+                                </div>
+                                <div class="tab-pane fade" id="pix-tab-pane" role="tabpanel" aria-labelledby="pix-tab"
+                                    tabindex="0">
+                                    pix
+                                </div>
+                                <div class="tab-pane fade" id="cards-tab-pane" role="tabpanel"
+                                    aria-labelledby="cards-tab" tabindex="0">
+                                    cartão
+                                </div>
+                                <div class="tab-pane fade" id="crypto-tab-pane" role="tabpanel"
+                                    aria-labelledby="crypto-tab" tabindex="0">
+                                    crypto
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <button class="btn btn-blue-light w-100">Finalizar Compra</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-lg-5">
                     <div class="card-car">
@@ -273,6 +331,52 @@
                                 </div>
                                 <div class="col-3 ps-0 text-end">
                                     <h6 class="mb-0">R$ 120,00</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-cupom">
+                            <p>Cupom:</p>
+                            <div class="row">
+                                <div class="col-9">
+                                    <input type="email" class="form-control" id="cupom" name="cupom">
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-blue-light w-100">Aplicar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-car-sub">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5><strong>Subtotal:</strong></h5>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <h5><strong>R$ 120,32</strong></h5>
+                                </div>
+                                <div class="col-6">
+                                    <h5><strong>Cupom:</strong></h5>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <h5 class="text-blue-light"><strong>- R$ 12,00</strong></h5>
+                                </div>
+                                <div class="col-6">
+                                    <h5><strong>Taxa:</strong></h5>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <h5><strong>+ R$ 0,93</strong></h5>
+                                </div>
+                            </div>
+
+                            <div class="car-total">
+                                <div class="row">
+                                    <div class="col-5">
+                                        <h5><strong>Total:</strong></h5>
+                                    </div>
+                                    <div class="col-7 text-end">
+                                        <h5><strong>R$199,99 </strong></h5>
+                                    </div>
                                 </div>
                             </div>
                         </div>

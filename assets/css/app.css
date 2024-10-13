@@ -12421,6 +12421,9 @@ textarea.form-control-lg {
 .light-mode .form-select {
   border: 2px solid #302C2C;
 }
+.light-mode .form-control {
+  border: 2px solid #302C2C;
+}
 .light-mode .card-em-4 {
   background-color: #ffffff;
 }
@@ -12566,6 +12569,9 @@ textarea.form-control-lg {
 .dark-mode .card-car::after {
   background-color: #302f2f;
 }
+.dark-mode .car-total {
+  border-color: #F5F2F2;
+}
 
 .btn-icon-header {
   display: inline-block;
@@ -12638,7 +12644,7 @@ textarea.form-control-lg {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  padding: 10px 35px;
+  padding: 10px 35px 9px 35px;
   border-radius: 10px;
 }
 .btn.btn-small {
@@ -12652,6 +12658,13 @@ textarea.form-control-lg {
 }
 .btn.btn-inline:hover {
   color: #ffffff !important;
+  background-color: #0081bc;
+}
+.btn.btn-blue-light {
+  color: #ffffff;
+  background-color: #15B5FF;
+}
+.btn.btn-blue-light:hover {
   background-color: #0081bc;
 }
 
@@ -12895,7 +12908,7 @@ textarea.form-control-lg {
   z-index: -1;
 }
 .card-car h6 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
 }
 .card-car h6.price {
@@ -12949,6 +12962,30 @@ textarea.form-control-lg {
 }
 .card-car .car-prices:last-of-type {
   margin-bottom: 0;
+}
+
+.card-cupom {
+  padding: 10px 0 10px 0;
+}
+.card-cupom p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-car-sub {
+  padding: 25px 0 0 0;
+}
+.card-car-sub h5 {
+  font-size: 26px;
+}
+
+.car-total {
+  padding: 20px 0 0 0;
+  margin: 20px 0 0 0;
+  border-top: 1px solid #302C2C;
+}
+.car-total h5 {
+  font-size: 28px;
 }
 
 .montserrat {
@@ -13375,13 +13412,13 @@ body::after {
   padding: 10px 15px;
 }
 
-.form-group {
+.form-control {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
   padding: 10px 15px;
 }
-.form-group::placeholder {
+.form-control::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
