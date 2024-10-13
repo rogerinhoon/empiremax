@@ -83,6 +83,40 @@
         color: $white;
         background-color: rgba($color: $black, $alpha: 0.95);
     }
+
+    .form-select {
+        border: 2px solid $gray-dark;
+    }
+
+    .card-em-4 {
+        background-color: $white;
+
+        a {
+            figure {
+                border: 1px solid $gray-dark;
+            }
+
+            p {
+                color: $gray-dark;
+            }
+        }
+    }
+    
+    .card-car {
+        background-color: #e2e2e2;
+        border-color: rgba($color: $gray-dark, $alpha: 0.6);
+
+        &::after {
+            background-color: #e2e2e2;
+        }
+    }
+
+    .card-car {
+        .qtd {
+            border-color: $gray-dark;
+            background-color: $white;
+        }
+    }
 }
 
 .dark-mode {
@@ -224,13 +258,46 @@
         .accordion-item,
         .accordion-button {
             color: $beige-light;
-            background-color: rgba($color: $gray-dark, $alpha: 0.95);
+            background-color: rgba($color: $black, $alpha: 0.9);
         }
 
         .accordion-button {
             &::after {
                 filter: invert(1);
             }
+
+            &:focus {
+                box-shadow: none;
+                background-color: rgba($color: $black, $alpha: 0.9);
+            }
+        }
+    }
+
+    .card-em-4 {
+        border-color: $white;
+        background-color: $black;
+
+        a {
+            figure {
+                border: 1px solid $white;
+            }
+
+            p {
+                color: $white;
+            }
+        }
+    }
+
+    .btn-link {
+        color: $white;
+    }
+
+    .card-car {
+        background-color: #302f2f;
+        border-color: rgba($color: $white, $alpha: 0.6);
+
+        &::after {
+            background-color: #302f2f;
         }
     }
 }

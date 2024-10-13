@@ -113,3 +113,12 @@
         // font-weight: 300;
     }
 }
+
+.btn-link {
+    font-size: 22px;
+    color: $gray-dark;
+
+    &:hover {
+        color: $green-light;
+    }
+}
