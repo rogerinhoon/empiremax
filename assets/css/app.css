@@ -12444,6 +12444,17 @@ textarea.form-control-lg {
   border-color: #302C2C;
   background-color: #ffffff;
 }
+.light-mode .car-tab .nav-tabs .nav-link {
+  color: #302C2C;
+  border-color: #302C2C;
+}
+.light-mode .car-tab .nav-tabs .nav-link.active {
+  color: #ffffff;
+  background-color: #15B5FF;
+}
+.light-mode .car-tab .nav-tabs .nav-link.active img {
+  filter: invert(1);
+}
 
 .dark-mode {
   background-color: rgba(18, 18, 21, 0.95);
@@ -13403,6 +13414,61 @@ body::after {
 }
 .accordion .accordion-item:not(:first-of-type) {
   border-top: 1px solid;
+}
+
+.car-tab .nav-tabs {
+  border-bottom: 0 !important;
+}
+.car-tab .nav-tabs .nav-item {
+  margin-right: 10px;
+}
+.car-tab .nav-tabs .nav-link {
+  padding: 18px;
+  border: 2px solid;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.car-tab .nav-tabs .nav-link img {
+  margin-right: 10px;
+}
+.container-code {
+  align-self: stretch;
+  border: 2px solid #302C2C;
+  border-radius: 6px;
+  color: rgba(0, 0, 0, 0.55);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 16px 0;
+  overflow: hidden;
+  padding: 16px;
+  position: relative;
+  white-space: nowrap;
+}
+.container-code .code-text {
+  font-weight: 300;
+}
+.container-code .code-action {
+  background: transparent;
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #F5F2F2 30%, #F5F2F2);
+  border: none;
+  color: #302C2C;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  height: 100%;
+  line-height: 1.25;
+  outline: 0;
+  padding: 0 16px 0 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+.container-code .code-action:hover {
+  color: #05C273;
 }
 
 .form-select {

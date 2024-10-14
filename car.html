@@ -39,6 +39,7 @@
     <script src="assets/js/jquery-3.7.1.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.inputmask.min.js"></script>
 
 </head>
 
@@ -216,8 +217,8 @@
 
     <main class="main-site overflow-hidden">
         <div class="container h-100">
-            <div class="row justify-content-center h-100">
-                <div class="col-lg-7">
+            <div class="row justify-content-between h-100">
+                <div class="col-lg-6">
                     <div class="pt-lg-5 pt-4">
                         <h5 class="f-cubano mb-4 mb-lg-5">Lorem ipsum</h5>
                         <div class="car-tab">
@@ -226,6 +227,7 @@
                                     <button class="nav-link active" id="all-tab" data-bs-toggle="tab"
                                         data-bs-target="#all-tab-pane" type="button" role="tab"
                                         aria-controls="all-tab-pane" aria-selected="true">
+                                        <img src="/assets/img/icon-grid.png" alt="">
                                         Todos
                                     </button>
                                 </li>
@@ -233,6 +235,7 @@
                                     <button class="nav-link" id="pix-tab" data-bs-toggle="tab"
                                         data-bs-target="#pix-tab-pane" type="button" role="tab"
                                         aria-controls="pix-tab-pane" aria-selected="false">
+                                        <img src="/assets/img/icon-qr-code.png" alt="">
                                         Pix
                                     </button>
                                 </li>
@@ -240,6 +243,7 @@
                                     <button class="nav-link" id="cards-tab" data-bs-toggle="tab"
                                         data-bs-target="#cards-tab-pane" type="button" role="tab"
                                         aria-controls="cards-tab-pane" aria-selected="false">
+                                        <img src="/assets/img/icon-credit-card.png" alt="">
                                         Cartão
                                     </button>
                                 </li>
@@ -247,6 +251,7 @@
                                     <button class="nav-link" id="crypto-tab" data-bs-toggle="tab"
                                         data-bs-target="#crypto-tab-pane" type="button" role="tab"
                                         aria-controls="crypto-tab-pane" aria-selected="false">
+                                        <img src="/assets/img/icon-cryptocurrency.png" alt="">
                                         Crypto
                                     </button>
                                 </li>
@@ -254,19 +259,101 @@
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="all-tab-pane" role="tabpanel"
                                     aria-labelledby="all-tab" tabindex="0">
-                                    todos
+                                    <div class="py4 py-lg-5">
+                                        Todos
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="pix-tab-pane" role="tabpanel" aria-labelledby="pix-tab"
                                     tabindex="0">
-                                    pix
+                                    <div class="py4 py-lg-5">
+                                        <div class="row align-items-center">
+                                            <div class="col-12">
+                                                <h6><strong>Escaneie este código QR para pagar</strong></h6>
+                                                <p>
+                                                    <b>1.</b> Acesse seu Internet Banking ou app de pagamentos.<br>
+                                                    <b>2.</b> Escolha pagar via Pix.<br>
+                                                    <b>3.</b> Escaneie o seguinte código:
+                                                </p>
+                                            </div>
+                                            <div class="col-12 my-4">
+                                                <img src="/assets/img/icon-qr-code.png" alt="">
+                                            </div>
+                                            <div class="col-12">
+                                                <h6><strong>Ou copie este código para fazer o pagamento</strong></h6>
+                                                <p>Escolha pagar via Pix pelo seu Internet Banking ou app de pagamentos.
+                                                    Depois, cole o seguinte código:</p>
+
+                                                <div class="container-code">
+                                                    <span class="code-text">
+                                                        00020126360014br.gov.bcb.pix011410573521000191520400005303986540544.895802BR5911AMAR.E.ARTE6014Rio
+                                                        de Janeiro62240520mpqrinter902319732296304D596
+                                                    </span>
+                                                    <button class="code-action">Copiar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="cards-tab-pane" role="tabpanel"
                                     aria-labelledby="cards-tab" tabindex="0">
-                                    cartão
+                                    <div class="py4 py-lg-5">
+                                        <div class="row">
+                                            <div class="col-auto">
+                                                <img src="/assets/img/icon-credit-card.png" alt="">
+                                            </div>
+                                            <div class="col mt-4">
+                                                <h6><strong>Dados do cartão</strong></h6>
+                                                <div class="mt-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-7">
+                                                            <div class="mb-3">
+                                                                <label for="number-card" class="form-label">Número do
+                                                                    cartão</label>
+                                                                <input type="text" class="form-control" id="number-card"
+                                                                    placeholder="0000 0000 0000 0000">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <label for="name-card" class="form-label">Nome
+                                                                    completo</label>
+                                                                <input type="text" class="form-control" id="name-card"
+                                                                    placeholder="Conforme aparece no cartão.">
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                <div class="row">
+                                                                    <div class="col-6">
+                                                                        <label for="due-date" class="form-label">Data de
+                                                                            vencimento</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="due-date" placeholder="MM/AA">
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <label for="code-cvv" class="form-label">Código
+                                                                            de segurança</label>
+                                                                        <input type="text" class="form-control"
+                                                                            id="code-cvv" placeholder="000">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="crypto-tab-pane" role="tabpanel"
                                     aria-labelledby="crypto-tab" tabindex="0">
-                                    crypto
+                                    <div class="py4 py-lg-5">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <img src="/assets/img/icon-cryptocurrency.png" alt="">
+                                            </div>
+                                            <div class="col">
+                                                <p><strong>Dados da crypto</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
@@ -484,6 +571,32 @@
                 body.classList.remove('dark-mode');
             }
         };
+    </script>
+
+    <!-- script mask cartao -->
+    <script>
+        $(document).ready(function () {
+            // Máscara para número do cartão de crédito
+            Inputmask({
+                mask: "9999 9999 9999 9999",
+                placeholder: "_",
+                showMaskOnHover: false
+            }).mask("#number-card");
+
+            // Máscara para data de vencimento (MM/AA)
+            Inputmask({
+                mask: "99/99",
+                placeholder: "_",
+                showMaskOnHover: false
+            }).mask("#due-date");
+
+            // Máscara para código de segurança (CVV)
+            Inputmask({
+                mask: "999",
+                placeholder: "_",
+                showMaskOnHover: false
+            }).mask("#code-cvv");
+        });
     </script>
 </body>
 

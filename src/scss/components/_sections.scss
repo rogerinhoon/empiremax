@@ -192,5 +192,69 @@ body {
 }
 
 .car-tab {
+    .nav-tabs {
+        border-bottom: 0 !important;
 
+        .nav-item {
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            padding: 18px;
+            border: 2px solid;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+
+            img {
+                margin-right: 10px;
+            }
+
+            &.active {
+
+            }
+        }
+    }
+}
+
+.container-code {
+    align-self: stretch;
+    border: 2px solid $gray-dark;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, .55);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 16px 0;
+    overflow: hidden;
+    padding: 16px;
+    position: relative;
+    white-space: nowrap;
+
+    .code-text {
+        font-weight: 300;
+    }
+
+    .code-action {
+        background: transparent;
+        background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), $beige-light 30%, $beige-light);
+        border: none;
+        color: $gray-dark;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        height: 100%;
+        line-height: 1.25;
+        outline: 0;
+        padding: 0 16px 0 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+
+        &:hover {
+            color: $green-light;
+        }
+    }
 }

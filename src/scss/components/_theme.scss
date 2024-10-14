@@ -105,7 +105,7 @@
             }
         }
     }
-    
+
     .card-car {
         background-color: #e2e2e2;
         border-color: rgba($color: $gray-dark, $alpha: 0.6);
@@ -119,6 +119,24 @@
         .qtd {
             border-color: $gray-dark;
             background-color: $white;
+        }
+    }
+
+    .car-tab {
+        .nav-tabs {
+            .nav-link {
+                color: $gray-dark;;
+                border-color: $gray-dark;
+
+                &.active {
+                    color: $white;
+                    background-color: $blue-light;
+
+                    img {
+                        filter: invert(1);
+                    }
+                }
+            }
         }
     }
 }
