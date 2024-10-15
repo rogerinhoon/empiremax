@@ -125,7 +125,8 @@
     .car-tab {
         .nav-tabs {
             .nav-link {
-                color: $gray-dark;;
+                color: $gray-dark;
+                ;
                 border-color: $gray-dark;
 
                 &.active {
@@ -137,6 +138,13 @@
                     }
                 }
             }
+        }
+    }
+
+    .container-code {
+        background-color: $white;
+        .code-action {
+            background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), $white 30%, $white);
         }
     }
 }
@@ -325,5 +333,48 @@
 
     .car-total {
         border-color: $beige-light;
+    }
+
+    .container-code {
+        background-color: $black;
+        border-color: $beige-light;
+
+        .code-text {
+            color: $beige-light;
+        }
+
+        .code-action {
+            color: $beige-light;
+            background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), $black 30%, $black);
+        }
+    }
+
+    .form-label {
+        color: $beige-light;
+    }
+
+    .car-tab {
+        .nav-tabs {
+            .nav-link {
+                color: $white;
+                border-color: $white;
+
+                &.active {
+                    color: $gray-dark;
+
+                    img {
+                        filter: brightness(0);
+                    }
+                }
+
+                img {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+
+    .icon-theme {
+        filter: invert(1);
     }
 }

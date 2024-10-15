@@ -55,38 +55,44 @@ b {
     font-weight: 700;
 }
 
-@media (min-width: 992px) {
-    h2 {
-        font-size: 48px;
-    }
+h2 {
+    font-size: 48px !important;
+}
 
-    h3 {
-        font-size: 42px;
-    }
+.h2-custom {
+    font-size: 48px;
+}
 
-    h4 {
-        font-size: 36px;
-    }
+h3 {
+    font-size: 42px !important;
+}
 
-    h5 {
-        font-size: 30px;
-    }
+h4 {
+    font-size: 36px !important;
+}
 
-    h6 {
-        font-size: 20px;
-    }
+h5 {
+    font-size: 30px !important;
+}
 
-    .fs-20 {
-        font-size: 20px;
-    }
+h6 {
+    font-size: 20px;
+}
 
-    .fs-22 {
-        font-size: 22px;
-    }
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
 }
 
 @media (max-width: 991px) {
     h2 {
+        font-size: 38px;
+    }
+
+    .h2-custom {
         font-size: 38px;
     }
 

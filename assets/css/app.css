@@ -1,10 +1,119 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+@font-face {
+  font-family: "cubanoregular";
+  src: url("/assets/fonts/cubano-webfont.woff2") format("woff2"), url("/assets/fonts/cubano-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.f-cubano {
+  font-family: "cubanoregular";
+}
+
+.text-blue-light {
+  color: #15B5FF;
+}
+
+.text-success {
+  color: --bs-success;
+}
+
+.text-danger {
+  color: --bs-danger;
+}
+
+.text-red {
+  color: #FF5F5F !important;
+}
+
+.text-green {
+  color: #05C273 !important;
+}
+
+.f-w-300 {
+  font-weight: 300;
+}
+
+.f-w-600 {
+  font-weight: 600;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px !important;
+}
+
+.h2-custom {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 42px !important;
+}
+
+h4 {
+  font-size: 36px !important;
+}
+
+h5 {
+  font-size: 30px !important;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 38px;
+  }
+  .h2-custom {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 26px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  .fs-20 {
+    font-size: 16px;
+  }
+  .fs-22 {
+    font-size: 19px;
+  }
+}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -12455,6 +12564,12 @@ textarea.form-control-lg {
 .light-mode .car-tab .nav-tabs .nav-link.active img {
   filter: invert(1);
 }
+.light-mode .container-code {
+  background-color: #ffffff;
+}
+.light-mode .container-code .code-action {
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #ffffff 30%, #ffffff);
+}
 
 .dark-mode {
   background-color: rgba(18, 18, 21, 0.95);
@@ -12582,6 +12697,36 @@ textarea.form-control-lg {
 }
 .dark-mode .car-total {
   border-color: #F5F2F2;
+}
+.dark-mode .container-code {
+  background-color: #121215;
+  border-color: #F5F2F2;
+}
+.dark-mode .container-code .code-text {
+  color: #F5F2F2;
+}
+.dark-mode .container-code .code-action {
+  color: #F5F2F2;
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #121215 30%, #121215);
+}
+.dark-mode .form-label {
+  color: #F5F2F2;
+}
+.dark-mode .car-tab .nav-tabs .nav-link {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.dark-mode .car-tab .nav-tabs .nav-link.active {
+  color: #302C2C;
+}
+.dark-mode .car-tab .nav-tabs .nav-link.active img {
+  filter: brightness(0);
+}
+.dark-mode .car-tab .nav-tabs .nav-link img {
+  filter: invert(1);
+}
+.dark-mode .icon-theme {
+  filter: invert(1);
 }
 
 .btn-icon-header {
@@ -12999,102 +13144,61 @@ textarea.form-control-lg {
   font-size: 28px;
 }
 
-.montserrat {
-  font-family: "Montserrat", sans-serif;
+.card-blog {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid;
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
-
-@font-face {
-  font-family: "cubanoregular";
-  src: url("/assets/fonts/cubano-webfont.woff2") format("woff2"), url("/assets/fonts/cubano-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+.card-blog a {
+  display: block;
+  text-decoration: none;
 }
-.f-cubano {
-  font-family: "cubanoregular";
+.card-blog a figure {
+  text-decoration: none;
 }
-
-.text-blue-light {
-  color: #15B5FF;
+.card-blog h6 {
+  color: #302C2C;
+  font-size: 22px;
+  margin-bottom: 15px;
 }
-
-.text-success {
-  color: --bs-success;
+.card-blog figure {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  padding-bottom: 36%;
+  border: 1px solid #302C2C;
+  margin: 16px 16px 16px 16px;
+  border-radius: 12px;
 }
-
-.text-danger {
-  color: --bs-danger;
+.card-blog figure .imgThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+  z-index: 1;
 }
-
-.text-red {
-  color: #FF5F5F !important;
+.card-blog figure .imgThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-
-.text-green {
-  color: #05C273 !important;
+.card-blog .card-em-body {
+  padding: 5px 15px 12px 15px;
 }
-
-.f-w-300 {
-  font-weight: 300;
-}
-
-.f-w-600 {
-  font-weight: 600;
-}
-
-p:last-of-type {
-  margin-bottom: 0;
-}
-
-strong,
-b {
-  font-weight: 700;
-}
-
-@media (min-width: 992px) {
-  h2 {
-    font-size: 48px;
-  }
-  h3 {
-    font-size: 42px;
-  }
-  h4 {
-    font-size: 36px;
-  }
-  h5 {
-    font-size: 30px;
-  }
-  h6 {
-    font-size: 20px;
-  }
-  .fs-20 {
-    font-size: 20px;
-  }
-  .fs-22 {
-    font-size: 22px;
-  }
-}
-@media (max-width: 991px) {
-  h2 {
-    font-size: 38px;
-  }
-  h3 {
-    font-size: 32px;
-  }
-  h4 {
-    font-size: 26px;
-  }
-  h5 {
-    font-size: 20px;
-  }
-  h6 {
-    font-size: 16px;
-  }
-  .fs-20 {
-    font-size: 16px;
-  }
-  .fs-22 {
-    font-size: 19px;
-  }
+.card-blog .card-em-body p {
+  font-size: 16px;
+  color: #302C2C;
+  line-height: 1.2;
 }
 .footer-site {
   position: relative;
@@ -13452,7 +13556,6 @@ body::after {
 }
 .container-code .code-action {
   background: transparent;
-  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #F5F2F2 30%, #F5F2F2);
   border: none;
   color: #302C2C;
   cursor: pointer;
