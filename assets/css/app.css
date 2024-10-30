@@ -12728,6 +12728,9 @@ textarea.form-control-lg {
 .dark-mode .icon-theme {
   filter: invert(1);
 }
+.dark-mode .card-blog .card-em-body h6 {
+  color: #302C2C;
+}
 
 .btn-icon-header {
   display: inline-block;

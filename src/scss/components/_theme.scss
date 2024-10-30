@@ -377,4 +377,12 @@
     .icon-theme {
         filter: invert(1);
     }
+
+    .card-blog {
+        .card-em-body {
+            h6 {
+                color: $gray-dark;
+            }
+        }
+    }
 }
