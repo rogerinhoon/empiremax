@@ -12731,6 +12731,9 @@ textarea.form-control-lg {
 .dark-mode .card-blog .card-em-body h6 {
   color: #302C2C;
 }
+.dark-mode .card-blog a:hover h6 {
+  color: #0081bc;
+}
 
 .btn-icon-header {
   display: inline-block;
@@ -13163,6 +13166,9 @@ textarea.form-control-lg {
 .card-blog a figure {
   text-decoration: none;
 }
+.card-blog a:hover h6 {
+  color: #0081bc;
+}
 .card-blog h6 {
   color: #302C2C;
   font-size: 22px;
@@ -13203,6 +13209,10 @@ textarea.form-control-lg {
   color: #302C2C;
   line-height: 1.2;
 }
+.card-blog .date-user strong {
+  color: #302C2C;
+}
+
 .footer-site {
   position: relative;
   z-index: 1;

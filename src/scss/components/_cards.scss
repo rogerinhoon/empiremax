@@ -357,7 +357,14 @@
         figure {
             text-decoration: none;
         }
+
+        &:hover {
+            h6 {
+                color: $blue;
+            }
+        }
     }
+
     h6 {
         color: $gray-dark;
         font-size: 22px;
@@ -404,7 +411,9 @@
         }
     }
 
-    .date {
-        
+    .date-user {
+        strong {
+            color: $gray-dark;
+        }
     }
 }

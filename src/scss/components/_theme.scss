@@ -384,5 +384,13 @@
                 color: $gray-dark;
             }
         }
+
+        a {
+            &:hover {
+                h6 {
+                    color: $blue;
+                }
+            }
+        }
     }
 }
