@@ -118,6 +118,12 @@
     padding: 30px 30px 32px 30px;
     border-radius: 26px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+
+    h6 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+    }
 }
 
 .card-em-4 {
@@ -200,13 +206,13 @@
 
 .box-amount {
     .box-a {
-        width: 15px;
-        height: 15px;
-        line-height: 11px;
+        width: 20px;
+        height: 20px;
+        line-height: 16px;
         text-align: center;
         border-radius: 50%;
         display: inline-block;
-        font-size: 15px;
+        font-size: 19px;
         font-weight: 300;
         color: $gray-dark;
         background-color: $white;
@@ -226,6 +232,8 @@
         margin: 0 4px;
         position: relative;
         top: 1px;
+        width: 24px;
+        text-align: center;
     }
 }
 
@@ -236,7 +244,7 @@
 .card-car {
     position: relative;
     height: 100%;
-    padding: 30px 20px;
+    padding: 40px 0 30px 20px;
     border-left: 1px solid;
 
     &::after {
@@ -327,7 +335,7 @@
     padding: 25px 0 0 0;
 
     h5 {
-        font-size: 26px;
+        font-size: 26px !important;
     }
 }
 

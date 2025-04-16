@@ -210,9 +210,7 @@ body {
                 margin-right: 10px;
             }
 
-            &.active {
-
-            }
+            &.active {}
         }
     }
 }
@@ -255,5 +253,127 @@ body {
         &:hover {
             color: $green-light;
         }
+    }
+}
+
+.img-game-view {
+    height: 0;
+    display: block;
+    position: relative;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding-bottom: 55%;
+    border-radius: 20px;
+
+    .imgThumb {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.5s;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.modal-img-empiremax {
+    max-width: 85%;
+
+    .modal-content {
+        border: 0;
+        background-color: transparent;
+    }
+
+    .modal-header {
+        border: 0 !important;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .btn-close {
+        opacity: 1;
+        filter: contrast(0);
+    }
+}
+
+.modal-backdrop.show {
+    opacity: 0.95;
+}
+
+.icon-45 {
+    width: 45px;
+    height: auto;
+}
+
+.img-360 {
+    max-width: 362px;
+    width: 100%;
+}
+
+.pagination {
+    position: relative;
+    margin-top: 20px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        li {
+            margin: 0 5px;
+
+            a {
+                font-family: 'cubanoregular';
+                font-size: 20px;
+                font-weight: 400;
+                border-radius: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: $black;
+                border: 1px solid $black;
+                transition: all 0.3s;
+                background-color: $white;
+                display: inline-block;
+                padding: 10px 24px;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $black;
+                    color: $white;
+                }
+
+                &.active {
+                    background-color: $black;
+                    color: $white;
+                    pointer-events: none;
+                }
+            }
+        }
+    }
+}
+
+.nav-category {
+    position: relative;
+    padding: 8px 12px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 }

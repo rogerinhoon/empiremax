@@ -147,6 +147,10 @@
             background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), $white 30%, $white);
         }
     }
+
+    .img-game-view {
+        border: 1px solid $black;
+    }
 }
 
 .dark-mode {
@@ -392,5 +396,13 @@
                 }
             }
         }
+    }
+
+    .img-game-view {
+        border: 1px solid $white;
+    }
+
+    .icon-45 {
+        filter: contrast(0);
     }
 }

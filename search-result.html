@@ -204,7 +204,7 @@
                 <a href="#" class="btns entrar montserrat mb-2" title="login entrar">Entrar</a>
             </div>
             <div class="">
-                <form action="" class="form-seach-header">
+                <form action="search-result.html" class="form-seach-header">
                     <input type="text" placeholder="Produto...">
                     <button>
                         <img src="assets/img/icon-search.png" alt="icone">
@@ -218,16 +218,15 @@
         <div class="container mb-5 pb-lg-5">
             <div class="row justify-content-center">
                 <div class="col-lg-10 pt-em-1 mb-3">
-                    <div class="row align-items-center">
+                    <div class="row align-items-end">
                         <div class="col-lg-9 mb-4 mb-lg-0">
                             <h5 class="f-w-600 mb-0">Resultados encontrados: 250+</h5>
                         </div>
                         <div class="col-lg-3 mb-4 mb-lg-0 text-star text-lg-end">
                             <select class="form-select">
                                 <option selected>Mais recente</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1">Mais popular</option>
+                                <option value="2">Mais vendido</option>
                             </select>
                         </div>
                     </div>
@@ -479,7 +478,7 @@
                         </div>
 
                         <div class="col-12 text-center mt-4">
-                            <a href="#" title="Ver mais" class="btn-link">
+                            <a href="#" id="vermais" title="Ver mais" class="btn-link">
                                 <strong>Ver mais</strong>
                             </a>
                         </div>
@@ -510,32 +509,7 @@
         </div>
     </footer>
 
-    <!--  -->
-    <script>
-        $('.owl-carousel-populares').owlCarousel({
-            loop: false,
-            margin: 20,
-            nav: true,
-            navText: [
-                // SVG para o botão de "anterior"
-                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="24" height="24"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>',
-                // SVG para o botão de "próximo"
-                '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="24" height="24"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>'
-            ],
-            responsive: {
-                0: {
-                    items: 3
-                },
-                600: {
-                    items: 4
-                },
-                1000: {
-                    items: 6
-                }
-            }
-        });
-    </script>
-
+    <!-- script -->
     <script>
         // Funções para manipular cookies
         function setCookie(name, value, days) {
@@ -586,6 +560,43 @@
                 body.classList.remove('dark-mode');
             }
         };
+    </script>
+
+    <!-- ver mais -->
+    <script>
+        document.getElementById('vermais').addEventListener('click', function (e) {
+            e.preventDefault();
+            const container = document.querySelector('.row.mt-4.pb-3');
+            const verMaisButton = document.getElementById('vermais').parentElement;
+            let count = 0;
+
+            for (let i = 0; i < 15; i++) {
+                const card = document.createElement('div');
+                card.className = 'col-lg-20 mb-4';
+                card.innerHTML = `
+                    <div class="card-em-4">
+                        <a href="#">
+                            <figure>
+                                <span class="imgThumb">
+                                    <img src="/assets/img/jg-mine.jpeg" alt="Jogo">
+                                </span>
+                            </figure>
+                            <div class="card-em-body">
+                                <p class="text-center mb-0">
+                                    <strong>Street Fighter</strong>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                `;
+                container.insertBefore(card, verMaisButton);
+                count++;
+            }
+
+            if (count < 15) {
+                document.getElementById('vermais').style.display = 'none';
+            }
+        });
     </script>
 </body>
 

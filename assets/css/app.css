@@ -42,6 +42,9 @@
   font-weight: 600;
 }
 
+p {
+  font-size: 17px;
+}
 p:last-of-type {
   margin-bottom: 0;
 }
@@ -51,7 +54,13 @@ b {
   font-weight: 700;
 }
 
-h2 {
+h1,
+.h1 {
+  font-size: 60px !important;
+}
+
+h2,
+.h2 {
   font-size: 48px !important;
 }
 
@@ -59,19 +68,23 @@ h2 {
   font-size: 48px;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 42px !important;
 }
 
-h4 {
+h4,
+.h4 {
   font-size: 36px !important;
 }
 
-h5 {
+h5,
+.h5 {
   font-size: 30px !important;
 }
 
-h6 {
+h6,
+.h6 {
   font-size: 20px;
 }
 
@@ -85,28 +98,28 @@ h6 {
 
 @media (max-width: 991px) {
   h2 {
-    font-size: 38px;
+    font-size: 38px !important;
   }
   .h2-custom {
-    font-size: 38px;
+    font-size: 38px !important;
   }
   h3 {
-    font-size: 32px;
+    font-size: 32px !important;
   }
   h4 {
-    font-size: 26px;
+    font-size: 26px !important;
   }
   h5 {
-    font-size: 20px;
+    font-size: 20px !important;
   }
   h6 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .fs-20 {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .fs-22 {
-    font-size: 19px;
+    font-size: 19px !important;
   }
 }
 /*!
@@ -12570,6 +12583,9 @@ textarea.form-control-lg {
 .light-mode .container-code .code-action {
   background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #ffffff 30%, #ffffff);
 }
+.light-mode .img-game-view {
+  border: 1px solid #121215;
+}
 
 .dark-mode {
   background-color: rgba(18, 18, 21, 0.95);
@@ -12733,6 +12749,12 @@ textarea.form-control-lg {
 }
 .dark-mode .card-blog a:hover h6 {
   color: #0081bc;
+}
+.dark-mode .img-game-view {
+  border: 1px solid #ffffff;
+}
+.dark-mode .icon-45 {
+  filter: contrast(0);
 }
 
 .btn-icon-header {
@@ -12956,6 +12978,11 @@ textarea.form-control-lg {
   border-radius: 26px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
+.card-em-3 h6 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
 
 .card-em-4 {
   height: 100%;
@@ -13024,13 +13051,13 @@ textarea.form-control-lg {
 }
 
 .box-amount .box-a {
-  width: 15px;
-  height: 15px;
-  line-height: 11px;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
   text-align: center;
   border-radius: 50%;
   display: inline-block;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 300;
   color: #302C2C;
   background-color: #ffffff;
@@ -13048,6 +13075,8 @@ textarea.form-control-lg {
   margin: 0 4px;
   position: relative;
   top: 1px;
+  width: 24px;
+  text-align: center;
 }
 
 .stars-em {
@@ -13057,7 +13086,7 @@ textarea.form-control-lg {
 .card-car {
   position: relative;
   height: 100%;
-  padding: 30px 20px;
+  padding: 40px 0 30px 20px;
   border-left: 1px solid;
 }
 .card-car::after {
@@ -13138,7 +13167,7 @@ textarea.form-control-lg {
   padding: 25px 0 0 0;
 }
 .card-car-sub h5 {
-  font-size: 26px;
+  font-size: 26px !important;
 }
 
 .car-total {
@@ -13587,11 +13616,121 @@ body::after {
   color: #05C273;
 }
 
+.img-game-view {
+  height: 0;
+  display: block;
+  position: relative;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  padding-bottom: 55%;
+  border-radius: 20px;
+}
+.img-game-view .imgThumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+  z-index: 1;
+}
+.img-game-view .imgThumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.modal-img-empiremax {
+  max-width: 85%;
+}
+.modal-img-empiremax .modal-content {
+  border: 0;
+  background-color: transparent;
+}
+.modal-img-empiremax .modal-header {
+  border: 0 !important;
+}
+.modal-img-empiremax .modal-body {
+  padding: 0;
+}
+.modal-img-empiremax .btn-close {
+  opacity: 1;
+  filter: contrast(0);
+}
+
+.modal-backdrop.show {
+  opacity: 0.95;
+}
+
+.icon-45 {
+  width: 45px;
+  height: auto;
+}
+
+.img-360 {
+  max-width: 362px;
+  width: 100%;
+}
+
+.pagination {
+  position: relative;
+  margin-top: 20px;
+}
+.pagination ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.pagination ul li {
+  margin: 0 5px;
+}
+.pagination ul li a {
+  font-family: "cubanoregular";
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121215;
+  border: 1px solid #121215;
+  transition: all 0.3s;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 10px 24px;
+  text-decoration: none;
+}
+.pagination ul li a:hover {
+  background-color: #121215;
+  color: #ffffff;
+}
+.pagination ul li a.active {
+  background-color: #121215;
+  color: #ffffff;
+  pointer-events: none;
+}
+
+.nav-category {
+  position: relative;
+  padding: 8px 12px;
+}
+.nav-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .form-select {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  padding: 10px 15px;
+  padding: 10px 35px 10px 15px;
 }
 
 .form-control {
@@ -13850,6 +13989,70 @@ body::after {
   width: 100%;
 }
 
+@media (max-width: 1460px) {
+  .car-tab .nav-tabs .nav-link img {
+    width: 34px;
+  }
+}
+@media (max-width: 1280px) {
+  .car-tab .nav-tabs .nav-link img {
+    width: 24px;
+  }
+}
+@media (max-width: 1180px) {
+  .car-tab .nav-tabs .nav-link img {
+    width: 24px;
+  }
+  .card-car-sub h5 {
+    font-size: 22px !important;
+  }
+  .card-car h6 {
+    font-size: 18px;
+  }
+  .car-tab .nav-tabs .nav-link {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .card-car::after {
+    left: -20px;
+  }
+  .card-car {
+    padding: 40px 0 30px 0;
+  }
+  .light-mode .card-car {
+    border-left: 0;
+  }
+  .modal-img-empiremax {
+    max-width: 90%;
+  }
+  .card-em-3 h6 {
+    font-size: 26px !important;
+  }
+}
+@media (max-width: 530px) {
+  .col-lg-20 {
+    width: 100%;
+  }
+  .icon-theme {
+    width: 40px;
+  }
+  .icon-theme.qrcode {
+    width: 100px;
+  }
+  h5 {
+    font-size: 24px !important;
+  }
+}
+@media (max-width: 500px) {
+  .car-tab .nav-tabs .nav-link img {
+    width: 20px;
+  }
+  .car-tab .nav-tabs .nav-link {
+    font-size: 13px;
+  }
+}
 /*!
  * Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

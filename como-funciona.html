@@ -219,275 +219,38 @@
 
     <main class="main-site">
         <div class="container mb-5 pb-lg-5">
-            <div class="row justify-content-center pt-em-1">
-                <div class="col-lg-5">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="0">
-                    <figure class="img-game-view">
-                        <span class="imgThumb">
-                            <img src="/assets/img/imf-ft-gm.png" alt="">
-                        </span>
-                    </figure>
-                    </a>
-
-                    <div class="row">
-                        <div class="col-4">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="1">
-                                <figure class="img-game-view">
-                                    <span class="imgThumb">
-                                        <img src="/assets/img/imf-ft-gm.png" alt="">
-                                    </span>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="2">
-                            <figure class="img-game-view">
-                                <span class="imgThumb">
-                                    <img src="/assets/img/imf-ft-gm.png" alt="">
-                                </span>
-                            </figure>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="3">
-                                <figure class="img-game-view">
-                                    <span class="imgThumb">
-                                        <img src="/assets/img/imf-ft-gm.png" alt="">
-                                    </span>
-                                </figure>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-5 mt-5 mt-lg-0">
-                    <div class="card-em-3">
-                        <h1 class="h3 mb-0 text-uppercase">
-                            <strong>CONTA DIAMOND IV 57 PDL SOLOQ</strong>
-                        </h1>
-
-                        <div class="mt-4 row align-items-center gx-lg-3">
-                            <div class="col-auto">
-                                <p class="mb-0 fs-20"><strong>Variação:</strong></p>
-                            </div>
-                            <div class="col-lg-6">
-                                <select class="form-select" aria-label="Small select example">
-                                    <option selected>Variação</option>
-                                    <option value="1">One</option>
-                                    <option value="2">Two</option>
-                                    <option value="3">Three</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4 align-items-center">
-                            <div class="col-auto">
-                                <p class="mb-0 fs-20"><strong>Quantidade:</strong></p>
-                            </div>
-                            <div class="col">
-                                <div class="box-amount">
-                                    <span class="box-a down" onclick="changeAmount(-1)">-</span>
-                                    <span class="amount" id="amount">1</span>
-                                    <span class="box-a up" onclick="changeAmount(1)">+</span>
-                                </div>
-                                <script>
-                                    function changeAmount(value) {
-                                        const amountElement = document.getElementById('amount');
-                                        let currentAmount = parseInt(amountElement.textContent);
-                                        currentAmount += value;
-                                        if (currentAmount < 0) {
-                                            currentAmount = 0;
-                                        }
-                                        amountElement.textContent = currentAmount;
-                                    }
-                                </script>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4 align-items-center">
-                            <div class="col-auto">
-                                <p class="mb-0 fs-20"><strong>Avaliação:</strong></p>
-                            </div>
-                            <div class="col ps-0">
-                                <span class="rating-stars-em">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star-half-stroke"></i>
-                                </span>
-                                <p class="mb-0 d-inline-block">de 14 avaliações</p>
-                            </div>
-                        </div>
-
-                        <div class="row mt-4 pt-lg-3 align-items-center">
-                            <div class="col-md-6">
-                                <a href="#" class="btn btn-inline w-100 mb-3 mb-lg-0">Adicionar ao Carrinho</a>
-                            </div>
-                            <div class="col-md-6">
-                                <a href="#" class="btn btn-primary w-100 mb-3 mb-lg-0">Comprar</a>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center pt-em-1 mb-4 mb-lg-5">
+                    <h2 class="f-cubano mb-4 mb-lg-5">COMO FUNCIONA?</h2>
+                    <h5 class="montserrat">
+                        <b>
+                            Nossa plataforma funciona com base nesses 3 pilares:
+                        </b>
+                    </h5>
                 </div>
             </div>
 
             <div class="row justify-content-center mt-5 mt-lg-5 pt-lg-4">
-                <div class="col-lg-10">
-                    <h5 class="mb-3"><strong>Descrição:</strong></h5>
-                    <div class="card-em-3">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eleifend purus id rutrum
-                            venenatis. Integer eu ultrices purus. Donec id laoreet sapien. Mauris egestas, felis sed
-                            sodales blandit, dolor odio dictum odio, faucibus rutrum erat ligula in orci. Duis porttitor
-                            dui eget lorem dictum, a efficitur quam consectetur. Aliquam pulvinar augue ac sem commodo
-                            scelerisque. Praesent ex magna, sodales a odio ac, efficitur volutpat nisl. Etiam neque
-                            risus, congue non elit ac, malesuada accumsan quam. Etiam non venenatis metus. Aenean
-                            facilisis neque et dolor laoreet auctor. Pellentesque aliquet cursus viverra. Nam volutpat
-                        </p>
+                <div class="col-lg-5">
+                    <div class="text-center mb-4 mb-lg-5">
+                        <img src="/assets/img/como-funciona-01.png" alt="Como funciona 1" class="img-360">
+                        <h5>
+                            <span class="h2 f-cubano">1.</span> Você cria um anúncio para vender seu produto e o comprador encontra o produto desejado, tudo de forma muito fácil.
+                        </h5>
                     </div>
 
-                    <div class="mt-5">
-                        <h5 class="mb-3"><strong>Avaliações:</strong></h5>
-                        <div class="card-em-3">
-                            <div class="row ">
-                                <div class="col-lg-4 text-center text-lg-start border-right-1">
-                                    <div class="row align-items-center h-100">
-                                        <div class="col-12">
-                                            <h5 class="fs-22">
-                                                <strong>Avaliações totais: 14</strong>
-                                            </h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 text-center border-right-1">
-                                    <div class="row align-items-center h-100">
-                                        <div class="col-12">
-                                            <div class="d-inline-block">
-                                                <div class="d-flex align-items-center">
-                                                    <h5 class="d-inline-block mb-0 fs-22"><strong>Média: 4.5</strong>
-                                                    </h5>
-                                                    <span class="rating-stars-em ms-2">
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star"></i>
-                                                        <i class="fa-solid fa-star-half-stroke"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 text-center text-lg-end mt-4 mt-lg-0">
-                                    <div class="d-inline-block">
-                                        <div class="text-start">
-                                            <span class="rating-stars-em me-1">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                            <p class="d-inline-block mb-0">5 avaliações</p>
-                                        </div>
-                                        <div class="text-start">
-                                            <span class="rating-stars-em me-1">
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                            <p class="d-inline-block mb-0">4 avaliações</p>
-                                        </div>
-                                        <div class="text-start">
-                                            <span class="rating-stars-em me-1">
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                            <p class="d-inline-block mb-0">3 avaliações</p>
-                                        </div>
-                                        <div class="text-start">
-                                            <span class="rating-stars-em me-1">
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                            <p class="d-inline-block mb-0">2 avaliações</p>
-                                        </div>
-                                        <div class="text-start">
-                                            <span class="rating-stars-em me-1">
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </span>
-                                            <p class="d-inline-block mb-0">1 avaliações</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="text-center mb-4 mb-lg-5">
+                        <img src="/assets/img/como-funciona-02.png" alt="Como funciona 2" class="img-360">
+                        <h5>
+                            <span class="h2 f-cubano">2.</span> <b>LOREM IPSUM</b> faz a intermediação da venda, para que tudo ocorra com agilidade e segurança.
+                        </h5>
                     </div>
 
-                    <div class="mt-5">
-                        <h5 class="mb-3"><strong>Perguntas Frequentes:</strong></h5>
-
-                        <div class="accordion" id="accordionPerguntas">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Em quanto tempo vocês enviam o acesso?
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionPerguntas">
-                                    <div class="accordion-body">
-                                        <p>A entrega é automatizada, nosso sistema realiza a entrega automaticamente.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Há algum risco?
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionPerguntas">
-                                    <div class="accordion-body">
-                                        <p>Logo após o pagamento ser aprovado, o código aparecerá na tela e também será
-                                            enviado para o seu email! 😊</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        Posso tomar algum banimento?
-                                    </button>
-                                </h2>
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionPerguntas">
-                                    <div class="accordion-body">
-                                        <p>Os códigos podem ser ativados na Steam, PlayStation, Xbox, Nintendo Switch e
-                                            dispositivos Android! Infelizmente, no iOS não é possível ativar os códigos.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="text-center mb-4 mb-lg-5">
+                        <img src="/assets/img/como-funciona-03.png" alt="Como funciona 3" class="img-360">
+                        <h5>
+                            <span class="h2 f-cubano">3.</span> O Comprador confirma que recebeu o produto e nós liberamos o pagamento para o Vendedor.
+                        </h5>
                     </div>
                 </div>
             </div>
