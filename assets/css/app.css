@@ -13242,6 +13242,10 @@ textarea.form-control-lg {
   color: #302C2C;
 }
 
+.card-transparent {
+  background-color: transparent !important;
+}
+
 .footer-site {
   position: relative;
   z-index: 1;
